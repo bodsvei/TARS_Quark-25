@@ -14,16 +14,21 @@ def recordText():
                 return text
 
         except sr.RequestError as e:
-            print("Could not request results: {0}".format{e})
+            print("Could not request results:{0}".format(e))
         
         except:
             print("Unknown error encountered.")
 
-    return
+    return text
 
 
 def writeText():
+    f = open("out.txt", "a")
+    f.write(text)
+    f.write("/n")
+    f.close
     return
+
 
 
 while(1):
