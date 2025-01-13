@@ -24,7 +24,7 @@ def recordText():
 def writeText(text):
     f = open("out.txt", "a")
     f.write(text)
-    f.write("/n")
+    f.write("\n")
     f.close
     return
 
