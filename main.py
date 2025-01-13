@@ -1,4 +1,4 @@
-import speech_recognistion as sr
+import speech_recognition as sr
 import pyttsx3
 
 r=sr.Recognizer()
