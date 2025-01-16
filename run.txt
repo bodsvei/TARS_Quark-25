@@ -1,1 +1,2 @@
+ipconfig getifaddr en0 
 python3 -m http.server 8000 -bind IPv4 adress
