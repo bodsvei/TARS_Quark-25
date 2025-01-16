@@ -35,4 +35,4 @@ while(1):
     print(text)
     out = writeText(text)
 
-    print("FILE CREATED")
+    print("out.txt UPDATED")

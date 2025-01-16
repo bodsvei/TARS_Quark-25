@@ -1,9 +1,9 @@
-from http.server import HTTPServer, SimpleHTTPRequestHandler
+from http.server import HTTPServer, BaseHTTPRequestHandler
 
-host = "10.20.29.80"
+host = "10.60.42.52"
 port = 8000
 
-class Server(SimpleHTTPRequestHandler):
+class Server(BaseHTTPRequestHandler):
 
     def doGet(self):
         self.send_response(200)
