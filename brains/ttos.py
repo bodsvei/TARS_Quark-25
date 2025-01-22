@@ -6,4 +6,4 @@ while True:
   _in = f.read()
   engine.say(_in)
   engine.runAndWait() 
-
+  
