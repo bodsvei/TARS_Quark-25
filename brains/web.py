@@ -1,6 +1,6 @@
 from http.server import HTTPServer, BaseHTTPRequestHandler
 
-host = "10.60.42.52"
+host = "10.20.29.80"
 port = 8000
 
 class Server(BaseHTTPRequestHandler):
