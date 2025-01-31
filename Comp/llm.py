@@ -3,7 +3,6 @@ import ollama
 client = ollama.Client()
 
 model = "llama3.2:1b"
-r = client.generate(model = model, prompt = "You are TARS our project for the Electronics and Robotics Club of BITS Goa. Reply in 1-2 lines with humorous responses.")
 
 while True:
     prompt = input("Speak : ")

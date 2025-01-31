@@ -21,13 +21,10 @@ def recordText():
     return _text
 
 
-def writeText(text):
-    f = open("out.txt", "a")
+def writeText(text, f):
     f.write(text)
     f.write("\n")
     f.close
-    return
-
 
 
 while(1):
@@ -36,3 +33,8 @@ while(1):
     out = writeText(text)
 
     print("out.txt UPDATED")
+
+
+if __name__ == "__main__":
+    recordText()
+    writeText()
