@@ -20,21 +20,5 @@ def recordText():
 
     return _text
 
-
-def writeText(text, f):
-    f.write(text)
-    f.write("\n")
-    f.close
-
-
-while(1):
-    text = recordText()
-    print(text)
-    out = writeText(text)
-
-    print("out.txt UPDATED")
-
-
 if __name__ == "__main__":
     recordText()
-    writeText()

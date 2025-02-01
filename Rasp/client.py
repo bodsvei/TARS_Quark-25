@@ -6,7 +6,7 @@ print ("Socket successfully created")
 IP="0.0.0.0"
 port = 8000
 
-s.connect(IP, port)
+s.connect((IP, port))
 
 def requestLLMOut():
     msg=s.recv(8)
