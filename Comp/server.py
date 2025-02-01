@@ -1,7 +1,9 @@
 import socket
 
+IP="0.0.0.0"
+
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-s.bind(("0.0.0.0", 8000))
+s.bind((IP, 8000))
 s.listen(5)
 
 f=open("llm_out.txt", "a")
