@@ -7,7 +7,7 @@ class Client:
 
     def __init__(self, HOST, PORT):
         self.socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        self.socket.connect((HOST, PORT))
+        self.socket.connect(HOST, PORT)
 
         self.TalkToServer()
 
@@ -15,10 +15,10 @@ class Client:
         Thread(target=self.recieveMessage).start()
         self.sendMessage()
     
-    def sendMessage(self):
+    def sendMessage(self, client_socket):
         while True:
             clientMessage=input(" ")
-            self.socket.send(clientMessage.encode())
+            client_socket.send(clientMessage.encode())
 
     def recieveMessage(self):
         while True:
@@ -29,3 +29,5 @@ class Client:
 
 if __name__ == "__main__":
     Client
+
+
