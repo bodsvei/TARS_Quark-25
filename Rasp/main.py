@@ -1,14 +1,3 @@
-from stot import recordText
-from client import requestLLMOut
-import time
-import pyttsx3
+from client import Client
 
-engine = pyttsx3.init()
-
-while True:
-    text = recordText()
-    print(text)
-    time.sleep(2)
-    engine.say(requestLLMOut())
-    engine.runAndWait()
-
+Client("192.168.130.76", 8000)
